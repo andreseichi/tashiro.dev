@@ -19,11 +19,11 @@ export function Projects() {
         Projects
       </h3>
 
-      <div className="relative overflow-x-scroll overflow-y-hidden w-full flex snap-x snap-mandatory z-20">
+      <div className="relative overflow-x-scroll overflow-y-hidden w-full flex snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary-400">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-screen flex flex-col gap-5 items-center justify-center p-20 md:p-44 flex-shrink-0 snap-center"
+            className="w-screen flex flex-col gap-5 items-center justify-center p-20 md:p-44 flex-shrink-0 snap-center h-screen"
           >
             <motion.div
               initial={{
