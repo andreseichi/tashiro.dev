@@ -19,7 +19,7 @@ export function Projects() {
         Projects
       </h3>
 
-      <div className="relative overflow-x-scroll overflow-y-hidden w-full flex snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary-400">
+      <div className="relative overflow-x-scroll overflow-y-hidden w-full flex snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary">
         {projects.map((project, index) => (
           <div
             key={index}
