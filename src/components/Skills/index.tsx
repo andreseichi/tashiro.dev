@@ -12,7 +12,7 @@ export function Skills() {
       }}
       transition={{ duration: 1.25 }}
       className="min-h-screen relative flex justify-center items-center flex-col text-center
-        md:text-left xl:flex-row max-w-[2000px] xl:px-10 xl:space-y-0"
+        md:text-left xl:flex-row max-w-[2000px] xl:px-10 xl:space-y-0 mx-auto"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills
