@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export function ExperienceCard() {
   return (
-    <article className="flex flex-col rounded-lg items-center gap-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center gap-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 py-6 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.div
         initial={{
           y: 100,
@@ -18,7 +18,7 @@ export function ExperienceCard() {
           y: 0,
         }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-top overflow-hidden"
+        className="w-32 h-32 rounded-full xl:w-[140px] xl:h-[140px] object-cover object-center overflow-hidden"
       >
         <Image src="/profile.jpg" alt="experience" width={1280} height={1280} />
       </motion.div>
@@ -47,30 +47,18 @@ export function ExperienceCard() {
 
         <p className="uppercase py-5 text-gray-300">started work at ended</p>
 
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        <ul className="list-disc space-y-3 ml-5 text-lg overflow-y-hidden">
           <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa
-            dolorum asperiores ad ducimus recusandae. Quod pariatur quaerat
-            ratione quas, recusandae delectus quo placeat totam nulla porro
-            consectetur nesciunt in.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+            ipsam animi eos hic velit at dicta, sed commodi est quidem.
           </li>
           <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa
-            dolorum asperiores ad ducimus recusandae. Quod pariatur quaerat
-            ratione quas, recusandae delectus quo placeat totam nulla porro
-            consectetur nesciunt in.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+            ipsam animi eos hic velit at dicta, sed commodi est quidem.
           </li>
           <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa
-            dolorum asperiores ad ducimus recusandae. Quod pariatur quaerat
-            ratione quas, recusandae delectus quo placeat totam nulla porro
-            consectetur nesciunt in.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa
-            dolorum asperiores ad ducimus recusandae. Quod pariatur quaerat
-            ratione quas, recusandae delectus quo placeat totam nulla porro
-            consectetur nesciunt in.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+            ipsam animi eos hic velit at dicta, sed commodi est quidem.
           </li>
         </ul>
       </div>
