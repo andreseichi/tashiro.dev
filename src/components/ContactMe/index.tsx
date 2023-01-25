@@ -4,19 +4,14 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 
-type inputsFormData = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
-
 const schema = z.object({
   name: z.string().min(3).max(20),
   email: z.string().email(),
   subject: z.string().min(3),
   message: z.string().min(3),
 });
+
+type inputsFormData = z.infer<typeof schema>;
 
 export function ContactMe() {
   const {
