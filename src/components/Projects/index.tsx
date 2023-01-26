@@ -51,9 +51,7 @@ export function Projects() {
 
             <div className="gap-10 px-0 md:px-10 max-w-6xl flex flex-col">
               <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#F7AB0A]/50">
-                  Project
-                </span>{' '}
+                <span className="underline decoration-primary">Project</span>{' '}
                 something
               </h4>
 
@@ -68,7 +66,7 @@ export function Projects() {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] skew-y-12"></div>
+      <div className="w-full absolute top-[30%] bg-primary/20 left-0 h-[500px] skew-y-12"></div>
     </motion.div>
   );
 }

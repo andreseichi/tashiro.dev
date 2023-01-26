@@ -34,7 +34,7 @@ export function ContactMe() {
       <div className="flex flex-col gap-10">
         <h4 className="text-4xl font-semibold text-center">
           Contact me for more information.{' '}
-          <span className="decoration-[#F7AB0A]/50 underline">Lets talk!</span>
+          <span className="decoration-primary underline">Lets talk!</span>
         </h4>
 
         <div className="flex flex-col justify-center items-center gap-6">
@@ -42,7 +42,7 @@ export function ContactMe() {
             <Phone
               size={32}
               weight="fill"
-              className="text-[#F7AB0A] animate-pulse"
+              className="text-primary animate-pulse"
             />
             <p className="text-2xl">+5591980448461</p>
           </div>
@@ -51,7 +51,7 @@ export function ContactMe() {
             <MapPin
               size={32}
               weight="fill"
-              className="text-[#F7AB0A] animate-pulse"
+              className="text-primary animate-pulse"
             />
             <p className="text-2xl">Pará - Brazil</p>
           </div>
@@ -60,7 +60,7 @@ export function ContactMe() {
             <EnvelopeSimple
               size={32}
               weight="duotone"
-              className="text-[#F7AB0A] animate-pulse"
+              className="text-primary animate-pulse"
             />
             <p className="text-2xl">tashiro.dev@gmail.com</p>
           </div>
@@ -100,7 +100,7 @@ export function ContactMe() {
           />
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-primary py-5 px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>

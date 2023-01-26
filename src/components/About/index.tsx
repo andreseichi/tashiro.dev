@@ -34,8 +34,7 @@ export function About() {
 
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
-          More about{' '}
-          <span className="underline decoration-[#F7AB0A]/50">me</span>
+          More about <span className="underline decoration-primary">me</span>
         </h4>
 
         <p className="text-base">
