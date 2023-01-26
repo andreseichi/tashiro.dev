@@ -22,14 +22,14 @@ export function Skills() {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
-        <Skill direction="left" />
-        <Skill direction="left" />
-        <Skill direction="left" />
-        <Skill direction="left" />
-        <Skill direction="left" />
-        <Skill direction="left" />
-        <Skill direction="left" />
+      <div className="grid grid-cols-3 gap-5 md:grid-cols-4">
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
       </div>
     </motion.div>
   );

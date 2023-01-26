@@ -30,7 +30,7 @@ const animateRight = {
 
 export function Header() {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-50 xl:items-center">
+    <header className="sticky top-0 p-5 flex items-center justify-between max-w-7xl mx-auto z-50 xl:items-center">
       <motion.div
         initial={initialLeftAnimation}
         animate={animateLeft}
