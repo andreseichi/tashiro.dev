@@ -31,7 +31,7 @@ export function About() {
         About
       </h3>
 
-      <div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="flex flex-col space-y-2 md:flex-row justify-center items-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -115,7 +115,7 @@ export function About() {
                   title="Framer"
                 />
               }
-              Framer .
+              Framer.
             </p>
 
             <p>
