@@ -54,7 +54,7 @@ export function About() {
             🐕
           </h4>
 
-          <article className="text-xs md:text-base leading-7 md:leading-8 space-y-4">
+          <article className="text-sm md:text-base leading-7 md:leading-8 space-y-4">
             <p>
               I am a {myAge} years old{' '}
               <span className="text-primary brightness-125">full stack</span>{' '}
