@@ -11,17 +11,13 @@ export function Experiences() {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex flex-col justify-evenly items-center text-left md:flex-row relative overflow-hidden max-w-full px-10 mx-auto"
+      className="min-h-screen flex flex-col justify-evenly items-center text-left md:flex-row relative overflow-hidden max-w-full px-3 md:px-10 mx-auto"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-14 hidden md:inline md:top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         experiences
       </h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary">
-        <ExperienceCard />
-
-        <ExperienceCard />
-
+      <div className="w-full flex space-x-5 overflow-x-scroll pb-10 md:p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary">
         <ExperienceCard />
 
         <ExperienceCard />

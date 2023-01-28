@@ -27,7 +27,7 @@ export function About() {
       className="h-screen relative flex flex-col text-center px-3 justify-evenly items-center mx-auto
       md:text-left md:flex-row md:px-10 max-w-7xl"
     >
-      <h3 className="absolute top-14 hidden md:inline md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-14 hidden md:inline md:top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
 
