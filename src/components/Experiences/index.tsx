@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ExperienceCard } from './components/ExperienceCard';
 
+import data from '@/data/experiences.json';
+
 export function Experiences() {
   return (
     <motion.div
@@ -18,9 +20,12 @@ export function Experiences() {
       </h3>
 
       <div className="w-full flex space-x-5 overflow-x-scroll pb-10 md:p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary">
-        <ExperienceCard />
-
-        <ExperienceCard />
+        {data.experiences.map((experience) => (
+          <ExperienceCard
+            key={experience.company.name}
+            experience={experience}
+          />
+        ))}
       </div>
     </motion.div>
   );
