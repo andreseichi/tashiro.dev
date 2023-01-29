@@ -1,0 +1,74 @@
+{
+  "experiences": [
+    {
+      "company": {
+        "imageSrc": "https://media.licdn.com/dms/image/C4D0BAQGaciAfEkm3JA/company-logo_200_200/0/1530813315267?e=1683158400&v=beta&t=T0ffF4NRlIfcZ6nRo_POua7hOA_YHTGiMYWQ8xP62UI",
+        "name": "VoxData Technology"
+      },
+      "position": "Frontend Developer",
+      "startDate": "2022-07-01T16:00:00.000Z",
+      "endDate": "Current",
+      "technologies": [
+        {
+          "id": "vue",
+          "name": "VueJs",
+          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+        },
+        {
+          "id": "reactNative",
+          "name": "React Native",
+          "imageSrc": "https://reactnative.dev/img/header_logo.svg"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "imageSrc": "https://simpleicons.org/icons/cypress.svg"
+        }
+      ],
+      "summary": [
+        "E2E tests for the projects with Cypress",
+        "Development of new features for the projects"
+      ]
+    },
+    {
+      "company": {
+        "imageSrc": "https://media.licdn.com/dms/image/C4D0BAQGaciAfEkm3JA/company-logo_200_200/0/1530813315267?e=1683158400&v=beta&t=T0ffF4NRlIfcZ6nRo_POua7hOA_YHTGiMYWQ8xP62UI",
+        "name": "VoxData Technology"
+      },
+      "position": "Frontend Developer",
+      "startDate": "2022-07-01T16:00:00.000Z",
+      "endDate": "Current",
+      "technologies": [
+        {
+          "id": "vue",
+          "name": "VueJs",
+          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+        },
+        {
+          "id": "reactNative",
+          "name": "React Native",
+          "imageSrc": "https://simpleicons.org/icons/react.svg"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "imageSrc": "https://www.cypress.io/images/layouts/cypress-logo.svg"
+        }
+      ],
+      "summary": [
+        "E2E tests for the projects with Cypress",
+        "Development of new features for the projects"
+      ]
+    }
+  ]
+}
