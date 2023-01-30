@@ -31,7 +31,7 @@ const animateRight = {
 export function Header() {
   return (
     <header
-      className="sticky top-0 p-1 bg-none flex items-center justify-between max-w-7xl mx-auto z-50 
+      className="sticky top-0 py-1 px-3 bg-none flex items-center justify-between max-w-7xl mx-auto z-50 
       md:p-5 xl:items-center"
     >
       <motion.div
