@@ -37,37 +37,44 @@
     },
     {
       "company": {
-        "imageSrc": "https://media.licdn.com/dms/image/C4D0BAQGaciAfEkm3JA/company-logo_200_200/0/1530813315267?e=1683158400&v=beta&t=T0ffF4NRlIfcZ6nRo_POua7hOA_YHTGiMYWQ8xP62UI",
-        "name": "VoxData Technology"
+        "imageSrc": "https://avatars.githubusercontent.com/u/60935595",
+        "name": "SEDEPTI - UFPA"
       },
-      "position": "Frontend Developer",
-      "startDate": "2022-07-01T16:00:00.000Z",
-      "endDate": "Current",
+      "position": "Web Development Intern",
+      "startDate": "2019-07-01T16:00:00.000Z",
+      "endDate": "2020-01-06T16:00:00.000Z",
       "technologies": [
         {
-          "id": "vue",
-          "name": "VueJs",
-          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+          "id": "html",
+          "name": "HTML",
+          "imageSrc": "https://simpleicons.org/icons/html5.svg"
         },
         {
-          "id": "reactNative",
-          "name": "React Native",
-          "imageSrc": "https://simpleicons.org/icons/react.svg"
+          "id": "css",
+          "name": "CSS",
+          "imageSrc": "https://simpleicons.org/icons/css3.svg"
         },
         {
-          "id": "typescript",
-          "name": "TypeScript",
-          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
+          "id": "javascript",
+          "name": "JavaScript",
+          "imageSrc": "https://simpleicons.org/icons/javascript.svg"
         },
         {
-          "id": "cypress",
-          "name": "Cypress",
-          "imageSrc": "https://www.cypress.io/images/layouts/cypress-logo.svg"
+          "id": "php",
+          "name": "PHP",
+          "imageSrc": "https://simpleicons.org/icons/php.svg"
+        },
+        {
+          "id": "wordpress",
+          "name": "WordPress",
+          "imageSrc": "https://simpleicons.org/icons/wordpress.svg"
         }
       ],
       "summary": [
-        "E2E tests for the projects with Cypress",
-        "Development of new features for the projects"
+        "Management of the website of the department",
+        "Creation of static pages for the website of the Central Library of the University",
+        "Fix bugs and create new features",
+        "Improvement of performance of the WordPress website"
       ]
     }
   ]

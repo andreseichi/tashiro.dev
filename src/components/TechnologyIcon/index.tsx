@@ -3,6 +3,11 @@ import {
   Typescript,
   ReactJs,
   Cypress,
+  Html5,
+  CssThree,
+  Javascript,
+  Php,
+  Wordpress,
 } from '@icons-pack/react-simple-icons';
 import Image from 'next/image';
 
@@ -12,6 +17,11 @@ const iconsMap = {
   react: ReactJs,
   reactNative: ReactJs,
   cypress: Cypress,
+  wordpress: Wordpress,
+  html: Html5,
+  css: CssThree,
+  javascript: Javascript,
+  php: Php,
 };
 
 type IconId = keyof typeof iconsMap;
