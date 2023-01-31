@@ -8,6 +8,14 @@ import {
   Javascript,
   Php,
   Wordpress,
+  Nodedotjs,
+  Mongodb,
+  Git,
+  Express,
+  Jest,
+  Reactquery,
+  Nextdotjs,
+  Tailwindcss,
 } from '@icons-pack/react-simple-icons';
 import Image from 'next/image';
 
@@ -22,6 +30,14 @@ const iconsMap = {
   css: CssThree,
   javascript: Javascript,
   php: Php,
+  nodejs: Nodedotjs,
+  mongodb: Mongodb,
+  git: Git,
+  express: Express,
+  jest: Jest,
+  reactQuery: Reactquery,
+  nextjs: Nextdotjs,
+  tailwindcss: Tailwindcss,
 };
 
 type IconId = keyof typeof iconsMap;
@@ -36,12 +52,16 @@ export function TechnologyIcon({ id, name, imageSrc }: TechnologyIconProps) {
   const Icon = iconsMap[id as IconId];
 
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className="flex items-center h-full justify-center gap-2">
       {Icon ? (
-        <Icon title={name} className="inline-block mx-1" color="default" />
+        <Icon
+          title={name}
+          className="inline-block mx-1 w-full h-full"
+          color="default"
+        />
       ) : (
         <Image
-          className="rounded-full bg-white"
+          className="w-full h-full"
           src={imageSrc}
           alt={name}
           width={24}
