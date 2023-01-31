@@ -1,0 +1,95 @@
+{
+  "skills": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "level": "90",
+      "icon": "https://simpleicons.org/icons/html5.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "level": "90",
+      "icon": "https://simpleicons.org/icons/css3.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "level": "80",
+      "icon": "https://simpleicons.org/icons/javascript.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "level": "80",
+      "icon": "https://simpleicons.org/icons/typescript.svg",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "level": "80",
+      "icon": "https://simpleicons.org/icons/react.svg",
+      "url": "https://beta.reactjs.org/"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "level": "80",
+      "icon": "https://simpleicons.org/icons/nextdotjs.svg",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "id": "tailwindcss",
+      "name": "Tailwind CSS",
+      "level": "80",
+      "icon": "https://simpleicons.org/icons/tailwindcss.svg",
+      "url": "https://tailwindcss.com/"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/nodedotjs.svg",
+      "url": "https://nodejs.org/en/"
+    },
+    {
+      "id": "express",
+      "name": "Express",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/express.svg",
+      "url": "https://expressjs.com/"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/mongodb.svg",
+      "url": "https://www.mongodb.com/"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/git.svg",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "id": "reactQuery",
+      "name": "React Query",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/react.svg",
+      "url": "https://react-query.tanstack.com/"
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/jest.svg",
+      "url": "https://jestjs.io/"
+    }
+  ]
+}
