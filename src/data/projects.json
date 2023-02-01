@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "image": "https://avatars.githubusercontent.com/u/108266839?s=200&v=4",
+      "url": "https://github.com/andreseichi",
+      "technologies": [
+        {
+          "id": "vue",
+          "name": "VueJs",
+          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+        },
+        {
+          "id": "reactNative",
+          "name": "React Native",
+          "imageSrc": "https://reactnative.dev/img/header_logo.svg"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "imageSrc": "https://simpleicons.org/icons/cypress.svg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "image": "https://avatars.githubusercontent.com/u/108266839?s=200&v=4",
+      "url": "https://github.com/andreseichi",
+      "technologies": [
+        {
+          "id": "vue",
+          "name": "VueJs",
+          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+        },
+        {
+          "id": "reactNative",
+          "name": "React Native",
+          "imageSrc": "https://reactnative.dev/img/header_logo.svg"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "imageSrc": "https://simpleicons.org/icons/cypress.svg"
+        }
+      ]
+    }
+  ]
+}
