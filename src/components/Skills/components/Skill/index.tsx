@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import { z } from 'zod';
+import { motion } from "framer-motion";
+import { z } from "zod";
 
-import { TechnologyIcon } from '@/components/TechnologyIcon';
-import Link from 'next/link';
+import { TechnologyIcon } from "@/components/TechnologyIcon";
+import Link from "next/link";
 
 const schema = z.object({
   skill: z.object({
@@ -21,7 +21,7 @@ export function Skill({ skill }: SkillProps) {
     <Link href={skill.url} target="_blank">
       <div className="group relative flex cursor-pointer">
         <div className="relative">
-          <div className="absolute -inset-1 bg-gradient-to-tr from-primary to-pink-600 rounded-full blur opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-spin"></div>
+          <div className="absolute -inset-1 animate-spin rounded-full bg-gradient-to-tr from-blue-600 to-pink-600 opacity-80 blur transition duration-300 group-hover:opacity-100 group-hover:duration-200"></div>
           <motion.div
             initial={{
               opacity: 0,
@@ -31,10 +31,10 @@ export function Skill({ skill }: SkillProps) {
             }}
             transition={{
               duration: 0.75,
-              ease: 'linear',
+              ease: "linear",
             }}
             viewport={{ once: true }}
-            className="rounded-full overflow-hidden p-2 border border-gray-500 object-cover w-20 h-20 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out bg-slate-800"
+            className="h-20 w-20 overflow-hidden rounded-full border border-gray-500 bg-slate-800 object-cover p-4 filter transition duration-300 ease-in-out group-hover:grayscale md:h-24 md:w-24"
           >
             <TechnologyIcon
               id={skill.id}
@@ -44,8 +44,8 @@ export function Skill({ skill }: SkillProps) {
           </motion.div>
         </div>
 
-        <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
-          <div className="flex items-center justify-center h-full">
+        <div className="absolute z-0 h-20 w-20 rounded-full opacity-0 transition duration-300 ease-in-out group-hover:bg-white group-hover:opacity-80 md:h-24 md:w-24">
+          <div className="flex h-full items-center justify-center">
             <p className="text-3xl font-bold text-black opacity-100">
               {skill.level}%
             </p>
