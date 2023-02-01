@@ -1,8 +1,8 @@
-import { EnvelopeSimple, MapPin, Phone } from 'phosphor-react';
-import { SubmitHandler, useForm } from 'react-hook-form';
+import { EnvelopeSimple, MapPin, Phone } from "phosphor-react";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
 const schema = z.object({
   name: z.string().min(3).max(20),
@@ -26,25 +26,25 @@ export function ContactMe() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col relative justify-evenly items-center text-center md:text-left md:flex-row max-w-7xl px-3 md:px-10 mx-auto">
-      <h3 className="absolute top-14 hidden md:inline uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly px-3 text-center md:flex-row md:px-10 md:text-left">
+      <h3 className="absolute top-14 hidden text-2xl uppercase tracking-[20px] text-gray-500 md:inline">
         Contact
       </h3>
 
-      <div className="flex flex-col gap-8 md:gap-10 w-full mx-auto">
-        <h4 className="text-2xl md:text-4xl font-semibold text-center">
-          Contact me for more information.{' '}
-          <span className="decoration-primary underline whitespace-nowrap">
+      <div className="mx-auto flex w-full flex-col gap-8 md:gap-10">
+        <h4 className="text-center text-2xl font-semibold md:text-4xl">
+          Contact me for more information.{" "}
+          <span className="whitespace-nowrap underline decoration-primary">
             Lets talk!
           </span>
         </h4>
 
-        <div className="flex flex-col justify-center items-center gap-2 md:gap-6">
+        <div className="flex flex-col items-center justify-center gap-2 md:gap-6">
           <div className="flex items-center justify-center gap-4">
             <Phone
               size={32}
               weight="fill"
-              className="text-primary animate-pulse"
+              className="animate-pulse text-primary"
             />
             <p className="text-xl md:text-2xl">+5591980448461</p>
           </div>
@@ -53,7 +53,7 @@ export function ContactMe() {
             <MapPin
               size={32}
               weight="fill"
-              className="text-primary animate-pulse"
+              className="animate-pulse text-primary"
             />
             <p className="text-xl md:text-2xl">Pará - Brazil</p>
           </div>
@@ -62,7 +62,7 @@ export function ContactMe() {
             <EnvelopeSimple
               size={32}
               weight="duotone"
-              className="text-primary animate-pulse"
+              className="animate-pulse text-primary"
             />
             <p className="text-xl md:text-2xl">tashiro.dev@gmail.com</p>
           </div>
@@ -70,17 +70,17 @@ export function ContactMe() {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-2 w-fit mx-auto"
+          className="mx-auto flex w-fit flex-col gap-2"
         >
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex flex-wrap gap-2">
             <input
-              {...register('name')}
+              {...register("name")}
               placeholder="Name"
               className="contactInput flex-1"
               type="text"
             />
             <input
-              {...register('email')}
+              {...register("email")}
               placeholder="Email"
               className="contactInput flex-1"
               type="email"
@@ -88,21 +88,21 @@ export function ContactMe() {
           </div>
 
           <input
-            {...register('subject')}
+            {...register("subject")}
             placeholder="Subject"
             className="contactInput"
             type="text"
           />
 
           <textarea
-            {...register('message')}
+            {...register("message")}
             placeholder="Message"
             className="contactInput resize-none"
             rows={6}
           />
           <button
             type="submit"
-            className="bg-primary py-4 px-10 rounded-md text-black font-bold text-lg"
+            className="rounded-md bg-primary py-4 px-10 text-lg font-bold text-black"
           >
             Submit
           </button>

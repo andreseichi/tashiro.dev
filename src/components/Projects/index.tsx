@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import { TechnologyIcon } from '../TechnologyIcon';
-import data from '@/data/projects.json';
+import { TechnologyIcon } from "../TechnologyIcon";
+import data from "@/data/projects.json";
 
 export function Projects() {
   return (
@@ -16,21 +16,21 @@ export function Projects() {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="min-h-screen flex flex-col justify-evenly items-center text-left md:flex-row relative overflow-hidden max-w-full px-3 md:px-10 mx-auto z-0"
+      className="relative z-0 mx-auto flex min-h-screen max-w-full flex-col items-center justify-evenly overflow-hidden px-3 text-left md:flex-row md:px-10"
     >
-      <h3 className="absolute top-14 hidden md:inline md:top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-14 hidden text-2xl uppercase tracking-[20px] text-gray-500 md:top-20 md:inline">
         Projects
       </h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll pb-10 md:p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary z-10">
+      <div className="z-10 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll pb-10 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary md:p-10">
         {data.projects.map((project, index) => (
           <Link
             key={index}
             href={project.url}
             target="_blank"
-            className=" relative rounded-xl flex-shrink-0 w-full md:w-[600px] xl:w-[900px] snap-center bg-gradient-to-r p-[5px] from-[#7928ca] to-[#ff0080] cursor-pointer transition-opacity duration-200 overflow-hidden"
+            className=" relative w-full flex-shrink-0 cursor-pointer snap-center overflow-hidden rounded-xl bg-gradient-to-r from-[#7928ca] to-[#ff0080] p-[5px] transition-opacity duration-200 md:w-[600px] xl:w-[900px]"
           >
-            <div className="flex flex-col gap-7 items-center rounded-xl w-full h-full bg-black p-4">
+            <div className="flex h-full w-full flex-col items-center gap-7 rounded-xl bg-black p-4">
               <motion.div
                 initial={{
                   y: 100,
@@ -44,7 +44,7 @@ export function Projects() {
                   y: 0,
                 }}
                 viewport={{ once: true }}
-                className="w-28 h-28 xl:w-[140px] xl:h-[140px] object-cover object-center overflow-hidden"
+                className="h-28 w-28 overflow-hidden object-cover object-center xl:h-[140px] xl:w-[140px]"
               >
                 <Image
                   src={project.image}
@@ -54,9 +54,9 @@ export function Projects() {
                 />
               </motion.div>
 
-              <h4 className="tracking-widest text-xl font-bold">Projeto X</h4>
+              <h4 className="text-xl font-bold tracking-widest">Projeto X</h4>
 
-              <div className="flex space-x-2 my-2">
+              <div className="my-2 flex space-x-2">
                 {project.technologies.map((technology, index) => (
                   <TechnologyIcon
                     id={technology.id}
@@ -78,7 +78,7 @@ export function Projects() {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-primary/20 left-0 h-[500px] skew-y-12 z-0"></div>
+      <div className="absolute top-[30%] left-0 z-0 h-[500px] w-full skew-y-12 bg-primary/20"></div>
     </motion.div>
   );
 }

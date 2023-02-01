@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 import {
   Astro,
@@ -9,10 +9,10 @@ import {
   ReactJs,
   Tailwindcss,
   Typescript,
-} from '@icons-pack/react-simple-icons';
-import { motion } from 'framer-motion';
+} from "@icons-pack/react-simple-icons";
+import { motion } from "framer-motion";
 
-import { myAge } from '@/utils/myAge';
+import { myAge } from "@/utils/myAge";
 
 export function About() {
   return (
@@ -24,20 +24,20 @@ export function About() {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex flex-col text-center px-3 justify-evenly items-center mx-auto
-      md:text-left md:flex-row md:px-10 max-w-7xl"
+      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-3
+      text-center md:flex-row md:px-10 md:text-left"
     >
-      <h3 className="absolute top-14 hidden md:inline md:top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-14 hidden text-2xl uppercase tracking-[20px] text-gray-500 md:top-20 md:inline">
         About
       </h3>
 
-      <div className="flex flex-col space-y-2 md:flex-row justify-center items-center">
+      <div className="flex flex-col items-center justify-center space-y-2 md:flex-row">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative object-cover flex-shrink-0 w-32 h-w-32 rounded-full overflow-hidden
-        md:mb-0 md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+          className="h-w-32 md:h-95 relative w-32 flex-shrink-0 overflow-hidden rounded-full
+        object-cover md:mb-0 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px]"
         >
           <Image
             src="/profile.jpg"
@@ -47,17 +47,17 @@ export function About() {
           />
         </motion.div>
 
-        <div className="space-y-4 px-0 md:pace-y-10 md:px-8">
-          <h4 className="text-lg md:text-4xl font-semibold">
-            Hey I&apos;m{' '}
+        <div className="md:pace-y-10 space-y-4 px-0 md:px-8">
+          <h4 className="text-lg font-semibold md:text-4xl">
+            Hey I&apos;m{" "}
             <span className="underline decoration-primary">André Tashiro</span>!
             🐕
           </h4>
 
-          <article className="text-sm md:text-base leading-7 md:leading-8 space-y-4">
+          <article className="space-y-4 text-sm leading-7 md:text-base md:leading-8">
             <p>
-              I am a {myAge} years old{' '}
-              <span className="text-primary brightness-125">full stack</span>{' '}
+              I am a {myAge} years old{" "}
+              <span className="text-primary brightness-125">full stack</span>{" "}
               web developer from Brazil 🇧🇷 and passionate about technology.
               I&apos;m currently working at a company in Brazil as a frontend
               developer. Started working with web development in 2019 and since
@@ -66,11 +66,11 @@ export function About() {
 
             <p>
               Although I&apos;m a fullstack developer, I&apos;m more focused on
-              the <span className="text-primary brightness-125">frontend</span>{' '}
+              the <span className="text-primary brightness-125">frontend</span>{" "}
               side and my favorite Stacks are
               {
                 <Deno
-                  className="inline-block mx-1"
+                  className="mx-1 inline-block"
                   color="default"
                   title="Deno"
                 />
@@ -78,7 +78,7 @@ export function About() {
               Deno,
               {
                 <ReactJs
-                  className="inline mx-1"
+                  className="mx-1 inline"
                   color="default"
                   title="ReactJs"
                 />
@@ -86,7 +86,7 @@ export function About() {
               React,
               {
                 <Nextdotjs
-                  className="inline mx-1"
+                  className="mx-1 inline"
                   color="default"
                   title="NextJs"
                 />
@@ -94,7 +94,7 @@ export function About() {
               Next.js,
               {
                 <Typescript
-                  className="inline mx-1"
+                  className="mx-1 inline"
                   color="default"
                   title="Typescript"
                 />
@@ -102,7 +102,7 @@ export function About() {
               TypeScript,
               {
                 <Tailwindcss
-                  className="inline-block mx-1"
+                  className="mx-1 inline-block"
                   color="default"
                   title="TailwindCSS"
                 />
@@ -110,7 +110,7 @@ export function About() {
               TailwindCSS and
               {
                 <Framer
-                  className="inline-block mx-1"
+                  className="mx-1 inline-block"
                   color="default"
                   title="Framer"
                 />
@@ -124,10 +124,10 @@ export function About() {
             </p>
 
             <p>
-              Currently in the hype for{' '}
+              Currently in the hype for{" "}
               <Link
                 href="https://create.t3.gg"
-                className="underline decoration-primary text-primary align-center transform hover:text-lg transition-all duration-300 ease-in-out"
+                className="align-center transform text-primary underline decoration-primary transition-all duration-300 ease-in-out hover:text-lg"
               >
                 T3-Stack
                 <Image
@@ -135,16 +135,16 @@ export function About() {
                   alt="T3-Stack logo"
                   width={18}
                   height={18}
-                  className="inline-block rounded-full mx-1"
+                  className="mx-1 inline-block rounded-full"
                 />
               </Link>
-              and{' '}
+              and{" "}
               <Link
                 href="https://astro.build/"
-                className="underline decoration-primary text-primary align-center transform hover:text-lg transition-all duration-300 ease-in-out"
+                className="align-center transform text-primary underline decoration-primary transition-all duration-300 ease-in-out hover:text-lg"
               >
                 Astro
-                <Astro className="inline mx-1" color="default" title="Astro" />
+                <Astro className="mx-1 inline" color="default" title="Astro" />
               </Link>
             </p>
           </article>

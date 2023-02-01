@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import z from 'zod';
-import { motion } from 'framer-motion';
-import dayjs from 'dayjs';
-import { TechnologyIcon } from '@/components/TechnologyIcon';
+import z from "zod";
+import { motion } from "framer-motion";
+import dayjs from "dayjs";
+import { TechnologyIcon } from "@/components/TechnologyIcon";
 
 const schema = z.object({
   experience: z.object({
@@ -12,13 +12,13 @@ const schema = z.object({
       imageSrc: z.string().url(),
     }),
     position: z.string(),
-    startDate: z.string().transform((value) => dayjs(value).format('MMM YYYY')),
+    startDate: z.string().transform((value) => dayjs(value).format("MMM YYYY")),
     endDate: z.string().transform((value) => {
-      if (value.toLocaleLowerCase() === 'current') {
+      if (value.toLocaleLowerCase() === "current") {
         return value;
       }
 
-      return dayjs(value).format('MMM YYYY');
+      return dayjs(value).format("MMM YYYY");
     }),
     technologies: z.array(
       z.object({
@@ -39,8 +39,8 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
   });
 
   return (
-    <article className="relative rounded-xl flex-shrink-0 w-full md:w-[600px] xl:w-[900px] snap-center bg-gradient-to-r p-[5px] from-[#7928ca] to-[#ff0080] opacity-100 md:opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
-      <div className="flex flex-col gap-7 items-center rounded-xl w-full h-full bg-black p-4">
+    <article className="relative w-full flex-shrink-0 cursor-pointer snap-center overflow-hidden rounded-xl bg-gradient-to-r from-[#7928ca] to-[#ff0080] p-[5px] opacity-100 transition-opacity duration-200 hover:opacity-100 md:w-[600px] md:opacity-40 xl:w-[900px]">
+      <div className="flex h-full w-full flex-col items-center gap-7 rounded-xl bg-black p-4">
         <motion.div
           initial={{
             y: 100,
@@ -54,7 +54,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
             y: 0,
           }}
           viewport={{ once: true }}
-          className="w-28 h-28 rounded-full xl:w-[140px] xl:h-[140px] object-cover object-center overflow-hidden"
+          className="h-28 w-28 overflow-hidden rounded-full object-cover object-center xl:h-[140px] xl:w-[140px]"
         >
           <Image
             src={experience.company.imageSrc}
@@ -64,16 +64,16 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           />
         </motion.div>
 
-        <div className="px-0 md:px-10 self-start">
-          <h4 className="text-3xl md:text-4xl font-light">
+        <div className="self-start px-0 md:px-10">
+          <h4 className="text-3xl font-light md:text-4xl">
             {experience.position}
           </h4>
 
-          <p className="font-bold text-xl md:text-2xl mt-1">
+          <p className="mt-1 text-xl font-bold md:text-2xl">
             {experience.company.name}
           </p>
 
-          <div className="flex space-x-2 my-2">
+          <div className="my-2 flex space-x-2">
             {experience.technologies.map((technology, index) => (
               <TechnologyIcon
                 id={technology.id}
@@ -84,11 +84,11 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
             ))}
           </div>
 
-          <p className="uppercase py-5 text-gray-300 text-sm md:text-base">
+          <p className="py-5 text-sm uppercase text-gray-300 md:text-base">
             {validData.experience.startDate} - {validData.experience.endDate}
           </p>
 
-          <ul className="list-disc space-y-3 ml-5 text-base md:ẗext-lg overflow-y-hidden">
+          <ul className="md:ẗext-lg ml-5 list-disc space-y-3 text-base overflow-y-hidden">
             {validData.experience.summary.map((summary) => (
               <li key={summary}>{summary}</li>
             ))}

@@ -1,12 +1,12 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { Cursor, useTypewriter } from 'react-simple-typewriter';
-import { BackgroundCircles } from '../BackgroundCircles';
-import Link from 'next/link';
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { BackgroundCircles } from "../BackgroundCircles";
+import Link from "next/link";
 
 export function Hero() {
   const [text] = useTypewriter({
-    words: ['Tashiro', 'Developer', 'trash'],
+    words: ["Tashiro", "Developer", "trash"],
     loop: true,
     delaySpeed: 2000,
     typeSpeed: 90,
@@ -14,22 +14,22 @@ export function Hero() {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
 
       <Image
         src="https://avatars.githubusercontent.com/u/40151349"
-        className="relative object-cover rounded-full h-32 w-32 mx-auto"
+        className="relative mx-auto h-32 w-32 rounded-full object-cover"
         alt="Tashiro avatar"
         width={128}
         height={128}
       />
 
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[12px]">
+        <h2 className="pb-2 text-sm uppercase tracking-[12px] text-gray-500">
           Fullstack Web Developer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="px-10 text-5xl font-semibold lg:text-6xl">
           <span className="mr-1">{text}</span>
           <Cursor cursorColor="#85D5CF" cursorStyle="█" />
         </h1>

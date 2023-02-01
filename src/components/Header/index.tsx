@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { SocialIcon } from 'react-social-icons';
-import { motion } from 'framer-motion';
-import { EnvelopeSimple } from 'phosphor-react';
+import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
+import { EnvelopeSimple } from "phosphor-react";
 
 const initialLeftAnimation = {
   x: -500,
@@ -31,7 +31,7 @@ const animateRight = {
 export function Header() {
   return (
     <header
-      className="sticky top-0 py-1 px-3 bg-none flex items-center justify-between max-w-7xl mx-auto z-50 
+      className="sticky top-0 z-50 mx-auto flex max-w-7xl items-center justify-between bg-none py-1 px-3 
       md:p-5 xl:items-center"
     >
       <motion.div
@@ -40,7 +40,7 @@ export function Header() {
         transition={{
           duration: 1.3,
         }}
-        className="flex flex-rowitems-center"
+        className="flex-rowitems-center flex"
       >
         <SocialIcon
           url="https://github.com/andreseichi"
@@ -72,10 +72,10 @@ export function Header() {
       >
         <Link
           href="#contact"
-          className="flex flex-row items-center justify-center gap-1 text-gray-400 hover:text-primary transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+          className="flex transform cursor-pointer flex-row items-center justify-center gap-1 text-gray-400 transition-transform duration-300 hover:scale-110 hover:text-primary"
         >
           <EnvelopeSimple size={32} weight="light" />
-          <p className="uppercase hidden md:inline-flex text-sm">Contact Me</p>
+          <p className="hidden text-sm uppercase md:inline-flex">Contact Me</p>
         </Link>
       </motion.div>
     </header>

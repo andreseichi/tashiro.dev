@@ -16,8 +16,8 @@ import {
   Reactquery,
   Nextdotjs,
   Tailwindcss,
-} from '@icons-pack/react-simple-icons';
-import Image from 'next/image';
+} from "@icons-pack/react-simple-icons";
+import Image from "next/image";
 
 const iconsMap = {
   vue: Vuedotjs,
@@ -52,16 +52,16 @@ export function TechnologyIcon({ id, name, imageSrc }: TechnologyIconProps) {
   const Icon = iconsMap[id as IconId];
 
   return (
-    <div className="flex items-center h-full justify-center gap-2">
+    <div className="flex h-full items-center justify-center gap-2">
       {Icon ? (
         <Icon
           title={name}
-          className="inline-block mx-1 w-full h-full"
+          className="mx-1 inline-block h-full w-full"
           color="default"
         />
       ) : (
         <Image
-          className="w-full h-full"
+          className="h-full w-full"
           src={imageSrc}
           alt={name}
           width={24}
