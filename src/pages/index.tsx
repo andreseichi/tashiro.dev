@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { House } from "phosphor-react";
+import { ToastContainer } from "react-toastify";
 
 import { About } from "@/components/About";
 import { Header } from "@/components/Header";
@@ -60,6 +61,8 @@ export default function Home() {
           </Link>
         </div>
       </footer>
+
+      <ToastContainer theme="colored" />
     </div>
   );
 }
