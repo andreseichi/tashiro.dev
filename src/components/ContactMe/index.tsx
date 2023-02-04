@@ -22,6 +22,7 @@ export function ContactMe() {
   const {
     register,
     handleSubmit,
+    resetField,
     formState: { errors }, // TODO input error handler
   } = useForm<inputsFormData>({
     resolver: zodResolver(schema),
@@ -32,6 +33,10 @@ export function ContactMe() {
       .then((response) => {
         if (response.status === 200) {
           const { message } = response.data;
+          resetField("email");
+          resetField("message");
+          resetField("name");
+          resetField("subject");
           toast.success(message);
         }
       })
