@@ -1,18 +1,25 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
+import timezone from "dayjs/plugin/timezone";
+import utc from "dayjs/plugin/utc";
+import dayjs from "dayjs";
+import { emailTemplate } from "@/utils/emailTemplate";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 interface NextApiRequestBody extends NextApiRequest {
   body: {
     name: string;
     email: string;
-    suibject: string;
+    subject: string;
     message: string;
   };
 }
 
 export default function handler(req: NextApiRequestBody, res: NextApiResponse) {
   if (req.method === "POST") {
-    const { message, email } = req.body;
+    const { message, email, name, subject } = req.body;
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -22,11 +29,23 @@ export default function handler(req: NextApiRequestBody, res: NextApiResponse) {
       },
     });
 
+    const timeNow = dayjs(new Date().toISOString())
+      .tz("America/Sao_Paulo")
+      .format("DD MMMM YYYY, HH:mm:ss");
+
+    const messageTemplate = emailTemplate(
+      message,
+      email,
+      name,
+      subject,
+      timeNow
+    );
+
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_ADDRESS,
       subject: "tashiro.dev Contact Form",
-      text: message,
+      text: messageTemplate,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

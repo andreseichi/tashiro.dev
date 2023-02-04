@@ -2,8 +2,8 @@ import { EnvelopeSimple, MapPin, Phone } from "phosphor-react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { toast } from "react-toastify";
+import { z } from "zod";
 
 import { api } from "@/services/api";
 
