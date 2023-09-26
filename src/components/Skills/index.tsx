@@ -21,10 +21,6 @@ export function Skills() {
         Skills
       </h3>
 
-      <h3 className="absolute top-36 hidden text-sm uppercase tracking-[3px] text-gray-500 md:inline">
-        Hover over a skill for current proficiency
-      </h3>
-
       <div className="grid grid-cols-3 gap-5 md:grid-cols-5 md:gap-7 xl:grid-cols-7">
         {data.skills.map((skill) => (
           <Skill key={skill.id} skill={skill} />

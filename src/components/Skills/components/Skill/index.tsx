@@ -21,7 +21,7 @@ export function Skill({ skill }: SkillProps) {
     <Link href={skill.url} target="_blank">
       <div className="group relative flex cursor-pointer">
         <div className="relative">
-          <div className="absolute -inset-1 animate-spin rounded-full bg-gradient-to-tr from-blue-600 to-pink-600 opacity-80 blur transition duration-300 group-hover:opacity-100 group-hover:duration-200"></div>
+          <div className="absolute -inset-1 animate-spin rounded-full bg-gradient-to-tr from-blue-600 to-pink-600 opacity-80 blur transition duration-300"></div>
           <motion.div
             initial={{
               opacity: 0,
@@ -34,7 +34,7 @@ export function Skill({ skill }: SkillProps) {
               ease: "linear",
             }}
             viewport={{ once: true }}
-            className="h-20 w-20 overflow-hidden rounded-full border border-gray-500 bg-slate-800 object-cover p-4 filter transition duration-300 ease-in-out group-hover:grayscale md:h-24 md:w-24"
+            className="h-20 w-20 overflow-hidden rounded-full border border-gray-500 bg-slate-800 object-cover p-4 filter transition duration-300 ease-in-out md:h-24 md:w-24"
           >
             <TechnologyIcon
               id={skill.id}
@@ -44,7 +44,7 @@ export function Skill({ skill }: SkillProps) {
           </motion.div>
         </div>
 
-        <div className="absolute z-0 h-20 w-20 rounded-full opacity-0 transition duration-300 ease-in-out group-hover:bg-white group-hover:opacity-80 md:h-24 md:w-24">
+        <div className="absolute z-0 h-20 w-20 rounded-full opacity-0 transition duration-300 ease-in-out md:h-24 md:w-24">
           <div className="flex h-full items-center justify-center">
             <p className="text-3xl font-bold text-black opacity-100">
               {skill.level}%
