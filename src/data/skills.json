@@ -36,6 +36,13 @@
       "url": "https://beta.reactjs.org/"
     },
     {
+      "id": "reactQuery",
+      "name": "React Query",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/react.svg",
+      "url": "https://react-query.tanstack.com/"
+    },
+    {
       "id": "nextjs",
       "name": "Next.js",
       "level": "80",
@@ -48,6 +55,20 @@
       "level": "80",
       "icon": "https://simpleicons.org/icons/tailwindcss.svg",
       "url": "https://tailwindcss.com/"
+    },
+    {
+      "id": "styledComponents",
+      "name": "Styled Components",
+      "level": "80",
+      "icon": "https://simpleicons.org/icons/styledcomponents.svg",
+      "url": "https://styled-components.com/"
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "level": "50",
+      "icon": "https://simpleicons.org/icons/vue-dot-js.svg",
+      "url": "https://vuejs.org/"
     },
     {
       "id": "nodejs",
@@ -78,11 +99,11 @@
       "url": "https://git-scm.com/"
     },
     {
-      "id": "reactQuery",
-      "name": "React Query",
-      "level": "70",
-      "icon": "https://simpleicons.org/icons/react.svg",
-      "url": "https://react-query.tanstack.com/"
+      "id": "gitlab",
+      "name": "GitLab",
+      "level": "50",
+      "icon": "https://simpleicons.org/icons/gitlab.svg",
+      "url": "https://about.gitlab.com/"
     },
     {
       "id": "jest",
@@ -90,6 +111,27 @@
       "level": "70",
       "icon": "https://simpleicons.org/icons/jest.svg",
       "url": "https://jestjs.io/"
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "level": "70",
+      "icon": "https://simpleicons.org/icons/cypress.svg",
+      "url": "https://www.cypress.io/"
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "level": "50",
+      "icon": "https://simpleicons.org/icons/vite.svg",
+      "url": "https://vitest.dev/"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "level": "30",
+      "icon": "https://simpleicons.org/icons/python.svg",
+      "url": "https://www.python.org/"
     }
   ]
 }
