@@ -16,6 +16,10 @@ import {
   Reactquery,
   Nextdotjs,
   Tailwindcss,
+  Styledcomponents,
+  Gitlab,
+  Vitest,
+  Python,
 } from "@icons-pack/react-simple-icons";
 import Image from "next/image";
 
@@ -38,6 +42,10 @@ const iconsMap = {
   reactQuery: Reactquery,
   nextjs: Nextdotjs,
   tailwindcss: Tailwindcss,
+  styledComponents: Styledcomponents,
+  gitlab: Gitlab,
+  vitest: Vitest,
+  python: Python,
 };
 
 type IconId = keyof typeof iconsMap;
