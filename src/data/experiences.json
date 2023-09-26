@@ -2,37 +2,78 @@
   "experiences": [
     {
       "company": {
+        "imageSrc": "https://uploads-ssl.webflow.com/5f7f921a3cde3a56d139f6ce/5f80ca3ce3582e2870dfb37f_logo_branco.svg",
+        "name": "Sossego Seguros"
+      },
+      "position": "Frontend Developer Full Time",
+      "startDate": "2023-02-20T16:00:00.000Z",
+      "endDate": "2023-07-25T16:00:00.000Z",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "TypeScript"
+        },
+        {
+          "id": "react",
+          "name": "React"
+        },
+        {
+          "id": "nodejs",
+          "name": "Node JS"
+        },
+        {
+          "id": "graphql",
+          "name": "Graphql"
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "id": "tailwindcss",
+          "name": "Tailwind CSS"
+        },
+        {
+          "id": "zod",
+          "name": "Zod"
+        }
+      ],
+      "summary": [
+        "Created new dashboard for insurers and managers to easily manage their clients and tasks",
+        "Creation of our own design system with Untitled UI and Tailwind CSS",
+        "Validation of data with Zod",
+        "State management with Zustand and React Context"
+      ]
+    },
+    {
+      "company": {
         "imageSrc": "https://media.licdn.com/dms/image/C4D0BAQGaciAfEkm3JA/company-logo_200_200/0/1530813315267?e=1683158400&v=beta&t=T0ffF4NRlIfcZ6nRo_POua7hOA_YHTGiMYWQ8xP62UI",
         "name": "VoxData Technology"
       },
-      "position": "Frontend Developer",
+      "position": "Frontend Developer Intern",
       "startDate": "2022-07-01T16:00:00.000Z",
-      "endDate": "Current",
+      "endDate": "2023-02-20T16:00:00.000Z",
       "technologies": [
         {
           "id": "vue",
-          "name": "VueJs",
-          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+          "name": "VueJs"
         },
         {
           "id": "reactNative",
-          "name": "React Native",
-          "imageSrc": "https://reactnative.dev/img/header_logo.svg"
+          "name": "React Native"
         },
         {
           "id": "typescript",
-          "name": "TypeScript",
-          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
+          "name": "TypeScript"
         },
         {
           "id": "cypress",
-          "name": "Cypress",
-          "imageSrc": "https://simpleicons.org/icons/cypress.svg"
+          "name": "Cypress"
         }
       ],
       "summary": [
         "E2E tests for the projects with Cypress",
-        "Development of new features for the projects"
+        "Development of new features for the multiple projects"
       ]
     },
     {
@@ -46,28 +87,23 @@
       "technologies": [
         {
           "id": "html",
-          "name": "HTML",
-          "imageSrc": "https://simpleicons.org/icons/html5.svg"
+          "name": "HTML"
         },
         {
           "id": "css",
-          "name": "CSS",
-          "imageSrc": "https://simpleicons.org/icons/css3.svg"
+          "name": "CSS"
         },
         {
           "id": "javascript",
-          "name": "JavaScript",
-          "imageSrc": "https://simpleicons.org/icons/javascript.svg"
+          "name": "JavaScript"
         },
         {
           "id": "php",
-          "name": "PHP",
-          "imageSrc": "https://simpleicons.org/icons/php.svg"
+          "name": "PHP"
         },
         {
           "id": "wordpress",
-          "name": "WordPress",
-          "imageSrc": "https://simpleicons.org/icons/wordpress.svg"
+          "name": "WordPress"
         }
       ],
       "summary": [
