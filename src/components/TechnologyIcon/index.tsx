@@ -22,6 +22,7 @@ import {
   SiPython,
   SiGraphql,
   SiPostgresql,
+  SiZod,
 } from "@icons-pack/react-simple-icons";
 import Image from "next/image";
 
@@ -50,6 +51,7 @@ const iconsMap = {
   python: SiPython,
   graphql: SiGraphql,
   postgresql: SiPostgresql,
+  zod: SiZod,
 };
 
 type IconId = keyof typeof iconsMap;
