@@ -1,22 +1,10 @@
 import { motion } from "framer-motion";
-import { z } from "zod";
 
 import { TechnologyIcon } from "@/components/TechnologyIcon";
+import { Skill } from "@/types/skill";
 import Link from "next/link";
 
-const schema = z.object({
-  skill: z.object({
-    id: z.string(),
-    name: z.string(),
-    level: z.string(),
-    icon: z.string().url(),
-    url: z.string().url(),
-  }),
-});
-
-type SkillProps = z.infer<typeof schema>;
-
-export function Skill({ skill }: SkillProps) {
+export function Skill({ skill }: Skill) {
   return (
     <Link href={skill.url} target="_blank">
       <div className="group relative flex cursor-pointer">

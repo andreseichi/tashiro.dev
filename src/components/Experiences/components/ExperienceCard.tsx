@@ -1,40 +1,12 @@
 import Image from "next/image";
 
-import z from "zod";
-import { motion } from "framer-motion";
-import dayjs from "dayjs";
 import { TechnologyIcon } from "@/components/TechnologyIcon";
+import { experienceCardSchema } from "@/schemas/experienceCard";
+import { ExperienceCard } from "@/types/experienceCard";
+import { motion } from "framer-motion";
 
-const schema = z.object({
-  experience: z.object({
-    company: z.object({
-      name: z.string(),
-      imageSrc: z.string().url(),
-    }),
-    position: z.string(),
-    startDate: z.string().transform((value) => dayjs(value).format("MMM YYYY")),
-    endDate: z.string().transform((value) => {
-      if (value.toLocaleLowerCase() === "current") {
-        return value;
-      }
-
-      return dayjs(value).format("MMM YYYY");
-    }),
-    technologies: z.array(
-      z.object({
-        id: z.string(),
-        name: z.string(),
-        imageSrc: z.string().url().optional(),
-      })
-    ),
-    summary: z.array(z.string()),
-  }),
-});
-
-type ExperienceCardProps = z.infer<typeof schema>;
-
-export function ExperienceCard({ experience }: ExperienceCardProps) {
-  const validData = schema.parse({
+export function ExperienceCard({ experience }: ExperienceCard) {
+  const validData = experienceCardSchema.parse({
     experience,
   });
 

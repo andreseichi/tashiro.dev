@@ -3,20 +3,12 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
-import { z } from "zod";
 
 import { api } from "@/services/api";
 
+import { formSchema } from "@/schemas/form";
+import { formData } from "@/types/formData";
 import "react-toastify/dist/ReactToastify.min.css";
-
-const schema = z.object({
-  name: z.string().min(3).max(20),
-  email: z.string().email(),
-  subject: z.string().min(3),
-  message: z.string().min(3),
-});
-
-type inputsFormData = z.infer<typeof schema>;
 
 export function ContactMe() {
   const {
@@ -24,10 +16,10 @@ export function ContactMe() {
     handleSubmit,
     resetField,
     formState: { errors }, // TODO input error handler
-  } = useForm<inputsFormData>({
-    resolver: zodResolver(schema),
+  } = useForm<formData>({
+    resolver: zodResolver(formSchema),
   });
-  const onSubmit: SubmitHandler<inputsFormData> = async (data) => {
+  const onSubmit: SubmitHandler<formData> = async (data) => {
     api
       .post("/email", data)
       .then((response) => {
