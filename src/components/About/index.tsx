@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import {
-  Astro,
-  Deno,
-  Framer,
-  Nextdotjs,
-  ReactJs,
-  Tailwindcss,
-  Typescript,
+  SiAstro,
+  SiDeno,
+  SiFramer,
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
 } from "@icons-pack/react-simple-icons";
 import { motion } from "framer-motion";
 
@@ -69,7 +69,7 @@ export function About() {
               the <span className="text-primary brightness-125">frontend</span>{" "}
               side and my favorite Stacks are
               {
-                <Deno
+                <SiDeno
                   className="mx-1 inline-block"
                   color="default"
                   title="Deno"
@@ -77,7 +77,7 @@ export function About() {
               }
               Deno,
               {
-                <ReactJs
+                <SiReact
                   className="mx-1 inline"
                   color="default"
                   title="ReactJs"
@@ -85,7 +85,7 @@ export function About() {
               }
               React,
               {
-                <Nextdotjs
+                <SiNextdotjs
                   className="mx-1 inline"
                   color="default"
                   title="NextJs"
@@ -93,7 +93,7 @@ export function About() {
               }
               Next.js,
               {
-                <Typescript
+                <SiTypescript
                   className="mx-1 inline"
                   color="default"
                   title="Typescript"
@@ -101,7 +101,7 @@ export function About() {
               }
               TypeScript,
               {
-                <Tailwindcss
+                <SiTailwindcss
                   className="mx-1 inline-block"
                   color="default"
                   title="TailwindCSS"
@@ -109,7 +109,7 @@ export function About() {
               }
               TailwindCSS and
               {
-                <Framer
+                <SiFramer
                   className="mx-1 inline-block"
                   color="default"
                   title="Framer"
@@ -144,7 +144,11 @@ export function About() {
                 className="align-center transform text-primary underline decoration-primary transition-all duration-300 ease-in-out hover:text-lg"
               >
                 Astro
-                <Astro className="mx-1 inline" color="default" title="Astro" />
+                <SiAstro
+                  className="mx-1 inline"
+                  color="default"
+                  title="Astro"
+                />
               </Link>
             </p>
           </article>

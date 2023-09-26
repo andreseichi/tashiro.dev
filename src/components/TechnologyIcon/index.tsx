@@ -1,51 +1,55 @@
 import {
-  Vuedotjs,
-  Typescript,
-  ReactJs,
-  Cypress,
-  Html5,
-  CssThree,
-  Javascript,
-  Php,
-  Wordpress,
-  Nodedotjs,
-  Mongodb,
-  Git,
-  Express,
-  Jest,
-  Reactquery,
-  Nextdotjs,
-  Tailwindcss,
-  Styledcomponents,
-  Gitlab,
-  Vitest,
-  Python,
+  SiVuedotjs,
+  SiTypescript,
+  SiReact,
+  SiCypress,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiPhp,
+  SiWordpress,
+  SiNodedotjs,
+  SiMongodb,
+  SiGit,
+  SiExpress,
+  SiJest,
+  SiReactquery,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiStyledcomponents,
+  SiGitlab,
+  SiVitest,
+  SiPython,
+  SiGraphql,
+  SiPostgresql,
 } from "@icons-pack/react-simple-icons";
 import Image from "next/image";
 
 const iconsMap = {
-  vue: Vuedotjs,
-  typescript: Typescript,
-  react: ReactJs,
-  reactNative: ReactJs,
-  cypress: Cypress,
-  wordpress: Wordpress,
-  html: Html5,
-  css: CssThree,
-  javascript: Javascript,
-  php: Php,
-  nodejs: Nodedotjs,
-  mongodb: Mongodb,
-  git: Git,
-  express: Express,
-  jest: Jest,
-  reactQuery: Reactquery,
-  nextjs: Nextdotjs,
-  tailwindcss: Tailwindcss,
-  styledComponents: Styledcomponents,
-  gitlab: Gitlab,
-  vitest: Vitest,
-  python: Python,
+  vue: SiVuedotjs,
+  typescript: SiTypescript,
+  react: SiReact,
+  reactNative: SiReact,
+  cypress: SiCypress,
+  wordpress: SiWordpress,
+  html: SiHtml5,
+  css: SiCss3,
+  javascript: SiJavascript,
+  php: SiPhp,
+  nodejs: SiNodedotjs,
+  mongodb: SiMongodb,
+  git: SiGit,
+  express: SiExpress,
+  jest: SiJest,
+  reactQuery: SiReactquery,
+  nextjs: SiNextdotjs,
+  tailwindcss: SiTailwindcss,
+  styledComponents: SiStyledcomponents,
+  gitlab: SiGitlab,
+  vitest: SiVitest,
+  python: SiPython,
+  graphql: SiGraphql,
+  postgresql: SiPostgresql,
 };
 
 type IconId = keyof typeof iconsMap;
@@ -53,10 +57,14 @@ type IconId = keyof typeof iconsMap;
 interface TechnologyIconProps {
   id: IconId | string;
   name: string;
-  imageSrc: string;
+  imageSrc?: string;
 }
 
-export function TechnologyIcon({ id, name, imageSrc }: TechnologyIconProps) {
+export function TechnologyIcon({
+  id,
+  name,
+  imageSrc = "",
+}: TechnologyIconProps) {
   const Icon = iconsMap[id as IconId];
 
   return (
