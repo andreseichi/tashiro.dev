@@ -24,7 +24,7 @@ const schema = z.object({
       z.object({
         id: z.string(),
         name: z.string(),
-        imageSrc: z.string().url(),
+        imageSrc: z.string().url().optional(),
       })
     ),
     summary: z.array(z.string()),
