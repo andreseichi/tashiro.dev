@@ -23,6 +23,10 @@ import {
   SiGraphql,
   SiPostgresql,
   SiZod,
+  SiPrisma,
+  SiReacthookform,
+  SiChakraui,
+  SiFramer,
 } from "@icons-pack/react-simple-icons";
 import { IconType } from "@icons-pack/react-simple-icons/types";
 
@@ -52,6 +56,10 @@ const iconsMap = {
   graphql: SiGraphql,
   postgresql: SiPostgresql,
   zod: SiZod,
+  prisma: SiPrisma,
+  reactHookForm: SiReacthookform,
+  chakraUI: SiChakraui,
+  framer: SiFramer,
 };
 
 export type IconId = keyof typeof iconsMap;
