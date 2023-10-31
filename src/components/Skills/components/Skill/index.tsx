@@ -31,14 +31,6 @@ export function Skill({ skill }: Skill) {
             />
           </motion.div>
         </div>
-
-        <div className="absolute z-0 h-20 w-20 rounded-full opacity-0 transition duration-300 ease-in-out md:h-24 md:w-24">
-          <div className="flex h-full items-center justify-center">
-            <p className="text-3xl font-bold text-black opacity-100">
-              {skill.level}%
-            </p>
-          </div>
-        </div>
       </div>
     </Link>
   );
