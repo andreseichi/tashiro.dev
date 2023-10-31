@@ -44,6 +44,7 @@ export function About() {
             alt="Tashiro avatar"
             width={1280}
             height={1280}
+            priority
           />
         </motion.div>
 
