@@ -1,60 +1,226 @@
 {
   "projects": [
     {
-      "id": 1,
-      "name": "Project 1",
-      "image": "https://avatars.githubusercontent.com/u/108266839?s=200&v=4",
-      "url": "https://github.com/andreseichi",
+      "id": "https://github.com/andreseichi/acai-website",
+      "name": "Açaízão da esquina",
+      "image": "https://media.discordapp.net/attachments/831183446725361744/1168757829839101992/image.png?ex=6552ed8d&is=6540788d&hm=74494a8f542e0f8643cfd1b4107f18747063b869a09bb955542fbd72e0dccf63&=&width=1022&height=607",
+      "url": "https://andreseichi.github.io/acai-website/",
       "technologies": [
         {
-          "id": "vue",
-          "name": "VueJs",
-          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+          "id": "html",
+          "name": "HTML"
         },
         {
-          "id": "reactNative",
-          "name": "React Native",
-          "imageSrc": "https://reactnative.dev/img/header_logo.svg"
+          "id": "css",
+          "name": "CSS"
         },
         {
-          "id": "typescript",
-          "name": "TypeScript",
-          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
-        },
-        {
-          "id": "cypress",
-          "name": "Cypress",
-          "imageSrc": "https://simpleicons.org/icons/cypress.svg"
+          "id": "javascript",
+          "name": "Javascript"
         }
-      ]
+      ],
+      "description": "Simple but beautiful static page of some açaí store build with only html, css and javascript, with no tools, packages or frameworks"
     },
     {
-      "id": 2,
-      "name": "Project 2",
-      "image": "https://avatars.githubusercontent.com/u/108266839?s=200&v=4",
-      "url": "https://github.com/andreseichi",
+      "id": "https://github.com/andreseichi/dog-ufpa-pure-css",
+      "name": "Pixel Art Dog UFPA - CSS Only",
+      "image": "https://media.discordapp.net/attachments/831183446725361744/1168999537382264932/Screenshot_from_2023-10-31_16-46-32.png?ex=6553cea8&is=654159a8&hm=442cab84a4dcf6c575d030c9aa127a36544632aa538f0204fe2e19ab370920ad&=&width=351&height=380",
+      "url": "https://andreseichi.github.io/dog-ufpa-pure-css/",
       "technologies": [
         {
-          "id": "vue",
-          "name": "VueJs",
-          "imageSrc": "https://simpleicons.org/icons/vuedotjs.svg"
+          "id": "html",
+          "name": "HTML"
         },
         {
-          "id": "reactNative",
-          "name": "React Native",
-          "imageSrc": "https://reactnative.dev/img/header_logo.svg"
+          "id": "css",
+          "name": "CSS"
+        }
+      ],
+      "description": "Pixel Art using only CSS"
+    },
+    {
+      "id": "https://github.com/andreseichi/todo-ignite",
+      "name": "Another Todo App",
+      "image": "https://raw.githubusercontent.com/andreseichi/todo-ignite/main/screenshots/screenshot.png",
+      "url": "https://todo-ignite-psi.vercel.app/",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "Typescript"
+        },
+        {
+          "id": "react",
+          "name": "ReactJS"
+        }
+      ],
+      "description": "Oh no, another todo app"
+    },
+    {
+      "id": "https://github.com/andreseichi/color-generator",
+      "name": "Color Generator",
+      "image": "https://raw.githubusercontent.com/andreseichi/color-generator/main/screenshots/screenshot.png",
+      "url": "https://color-generator-nu.vercel.app/",
+      "technologies": [
+        {
+          "id": "react",
+          "name": "ReactJS"
         },
         {
           "id": "typescript",
-          "name": "TypeScript",
-          "imageSrc": "https://simpleicons.org/icons/typescript.svg"
+          "name": "Typescript"
         },
         {
-          "id": "cypress",
-          "name": "Cypress",
-          "imageSrc": "https://simpleicons.org/icons/cypress.svg"
+          "id": "styledComponents",
+          "name": "Styled Components"
         }
-      ]
+      ],
+      "description": "Generate colors with multiple brightness options based on a color input"
+    },
+    {
+      "id": "https://github.com/andreseichi/drivenpass",
+      "name": "DrivenPass",
+      "image": "https://media.discordapp.net/attachments/831183446725361744/1169010464034922546/Screenshot_from_2023-10-31_17-29-52.png?ex=6553d8d5&is=654163d5&hm=ab5833471e1756a74cf108d79a6d11d3a52fc1c477aa1073db4516eb46de022c&=&width=776&height=305",
+      "url": "https://github.com/andreseichi/drivenpass",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "Typescript"
+        },
+        {
+          "id": "nodejs",
+          "name": "NodeJS"
+        },
+        {
+          "id": "express",
+          "name": "ExpressJS",
+          "backgroundColor": "bg-zinc-400"
+        },
+        {
+          "id": "prisma",
+          "name": "Prisma",
+          "backgroundColor": "bg-zinc-400"
+        }
+      ],
+      "description": "Api to secure your secret informations and passwords and manage all of them very easily"
+    },
+    {
+      "id": "https://github.com/andreseichi/expense-less",
+      "name": "Expense Less",
+      "image": "https://raw.githubusercontent.com/andreseichi/expense-less/main/screenshots/screenshot2.png",
+      "url": "https://expense-less.vercel.app/",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "Typescript"
+        },
+        {
+          "id": "nextjs",
+          "name": "NextJS",
+          "backgroundColor": "bg-zinc-400"
+        },
+        {
+          "id": "reactQuery",
+          "name": "React Query",
+          "backgroundColor": "bg-zinc-400"
+        },
+        {
+          "id": "reactHookForm",
+          "name": "React Hook Form"
+        },
+        {
+          "id": "chakraUI",
+          "name": "ChakraUI"
+        }
+      ],
+      "description": "Dashboard of money management application with own login system with JWT for more security"
+    },
+    {
+      "id": "https://github.com/andreseichi/ignite-timer",
+      "name": "Ignite Timer",
+      "image": "https://raw.githubusercontent.com/andreseichi/ignite-timer/main/screenshots/screenshot.png",
+      "url": "https://ignite-timer-murex.vercel.app/",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "Typescript"
+        },
+        {
+          "id": "react",
+          "name": "ReactJS"
+        },
+        {
+          "id": "reactHookForm",
+          "name": "React Hook Form"
+        },
+        {
+          "id": "zod",
+          "name": "Zod"
+        },
+        {
+          "id": "styledComponents",
+          "name": "Styled Components"
+        }
+      ],
+      "description": "Application to manage your time spent on projects"
+    },
+    {
+      "id": "https://github.com/andreseichi/tilt-tracker-bot",
+      "name": "Tilt Tracker - Discord Bot",
+      "image": "https://media.discordapp.net/attachments/831183446725361744/1169013792655556851/Screenshot_from_2023-10-31_17-43-17.png?ex=6553dbef&is=654166ef&hm=4f5ecb47c0025bc43bbeb0283a9cbf2593b4d290f885bf5736309ad0e26bd35c&=&width=406&height=392",
+      "url": "https://discord.com/api/oauth2/authorize?client_id=1088620637951635637&permissions=277025646784&scope=bot%20applications.commands",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "Typescript"
+        },
+        {
+          "id": "nodejs",
+          "name": "NodeJS"
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL"
+        }
+      ],
+      "description": "Discord bot made in NodeJS to save and track the tilts of your friends in the server"
+    },
+    {
+      "id": "https://github.com/andreseichi/tashiro.dev",
+      "name": "Tashiro Dev - Website",
+      "image": "https://media.discordapp.net/attachments/831183446725361744/1169013792655556851/Screenshot_from_2023-10-31_17-43-17.png?ex=6553dbef&is=654166ef&hm=4f5ecb47c0025bc43bbeb0283a9cbf2593b4d290f885bf5736309ad0e26bd35c&=&width=406&height=392",
+      "url": "https://github.com/andreseichi/tashiro.dev",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "Typescript"
+        },
+        {
+          "id": "react",
+          "name": "ReactJS"
+        },
+        {
+          "id": "nextjs",
+          "name": "NextJS",
+          "backgroundColor": "bg-zinc-400"
+        },
+        {
+          "id": "reactHookForm",
+          "name": "React Hook Form"
+        },
+        {
+          "id": "zod",
+          "name": "Zod"
+        },
+        {
+          "id": "framer",
+          "name": "Framer Motion"
+        },
+        {
+          "id": "tailwindcss",
+          "name": "TailwindCSS"
+        }
+      ],
+      "description": "That website"
     }
   ]
 }
