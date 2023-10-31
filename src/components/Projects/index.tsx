@@ -5,8 +5,11 @@ import { motion } from "framer-motion";
 
 import { TechnologyIcon } from "../TechnologyIcon";
 import data from "@/data/projects.json";
+import { Project } from "./components/Project";
 
 export function Projects() {
+  const sortedProjects = data.projects.slice().reverse();
+
   return (
     <motion.div
       initial={{
@@ -23,58 +26,8 @@ export function Projects() {
       </h3>
 
       <div className="z-10 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll pb-10 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary md:p-10">
-        {data.projects.map((project, index) => (
-          <Link
-            key={index}
-            href={project.url}
-            target="_blank"
-            className=" relative w-full flex-shrink-0 cursor-pointer snap-center overflow-hidden rounded-xl bg-gradient-to-r from-[#7928ca] to-[#ff0080] p-[5px] transition-opacity duration-200 md:w-[600px] xl:w-[900px]"
-          >
-            <div className="flex h-full w-full flex-col items-center gap-7 rounded-xl bg-black p-4">
-              <motion.div
-                initial={{
-                  y: 100,
-                  opacity: 0,
-                }}
-                transition={{
-                  duration: 1.2,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{ once: true }}
-                className="h-28 w-28 overflow-hidden object-cover object-center xl:h-[140px] xl:w-[140px]"
-              >
-                <Image
-                  src={project.image}
-                  alt="experience"
-                  width={1280}
-                  height={1280}
-                />
-              </motion.div>
-
-              <h4 className="text-xl font-bold tracking-widest">Projeto X</h4>
-
-              <div className="my-2 flex space-x-2">
-                {project.technologies.map((technology, index) => (
-                  <TechnologyIcon
-                    id={technology.id}
-                    imageSrc={technology.imageSrc}
-                    name={technology.name}
-                    key={index}
-                  />
-                ))}
-              </div>
-
-              <p className="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae possimus tenetur maiores suscipit ipsa quo nostrum
-                ratione consequuntur optio accusamus? Sunt, modi enim. Officia
-                id dicta dolorum neque tempore doloremque.
-              </p>
-            </div>
-          </Link>
+        {sortedProjects.map((project, index) => (
+          <Project project={project} key={index} />
         ))}
       </div>
 
