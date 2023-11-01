@@ -30,7 +30,7 @@ export function ExperienceCard({ experience }: ExperienceCard) {
         >
           <Image
             src={experience.company.imageSrc}
-            alt="experience"
+            alt={experience.company.name}
             width={1280}
             height={1280}
           />
