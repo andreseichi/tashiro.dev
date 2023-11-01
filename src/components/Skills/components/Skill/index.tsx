@@ -9,7 +9,7 @@ export function Skill({ skill }: Skill) {
     <Link href={skill.url} target="_blank">
       <div className="group relative flex cursor-pointer">
         <div className="relative">
-          <div className="absolute -inset-1 animate-spin rounded-full bg-gradient-to-tr from-blue-600 to-pink-600 opacity-80 blur transition duration-300"></div>
+          <div className="absolute -inset-1 -z-10 animate-spin rounded-full bg-gradient-to-tr from-blue-600 to-pink-600 opacity-80 blur transition duration-300"></div>
           <motion.div
             initial={{
               opacity: 0,

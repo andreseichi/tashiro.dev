@@ -26,7 +26,6 @@ export function Project({ project }: Project) {
             y: 0,
           }}
           viewport={{ once: true }}
-          // className="h-28 w-28 overflow-hidden object-cover object-center xl:h-[220px] xl:w-[220px]"
           className="overflow-hidden object-cover object-center"
         >
           <Image
@@ -44,7 +43,7 @@ export function Project({ project }: Project) {
           {project.technologies.map((technology, index) => (
             <div
               key={index}
-              className={`h-[40px] w-[40px] rounded-full p-1 ${technology.backgroundColor}`}
+              className={`h-[40px] w-[40px] rounded-full p-1 ${technology?.backgroundColor}`}
             >
               <TechnologyIcon
                 id={technology.id}
