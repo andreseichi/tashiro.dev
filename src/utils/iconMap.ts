@@ -27,6 +27,8 @@ import {
   SiReacthookform,
   SiChakraui,
   SiFramer,
+  SiRadixui,
+  SiStripe,
 } from "@icons-pack/react-simple-icons";
 import { IconType } from "@icons-pack/react-simple-icons/types";
 
@@ -60,6 +62,8 @@ const iconsMap = {
   reactHookForm: SiReacthookform,
   chakraUI: SiChakraui,
   framer: SiFramer,
+  radix: SiRadixui,
+  stripe: SiStripe,
 };
 
 export type IconId = keyof typeof iconsMap;
