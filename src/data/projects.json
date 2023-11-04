@@ -92,13 +92,11 @@
         },
         {
           "id": "express",
-          "name": "ExpressJS",
-          "backgroundColor": "bg-zinc-400"
+          "name": "ExpressJS"
         },
         {
           "id": "prisma",
-          "name": "Prisma",
-          "backgroundColor": "bg-zinc-400"
+          "name": "Prisma"
         }
       ],
       "description": "Api to secure your secret informations and passwords and manage all of them very easily"
@@ -115,13 +113,11 @@
         },
         {
           "id": "nextjs",
-          "name": "NextJS",
-          "backgroundColor": "bg-zinc-400"
+          "name": "NextJS"
         },
         {
           "id": "reactQuery",
-          "name": "React Query",
-          "backgroundColor": "bg-zinc-400"
+          "name": "React Query"
         },
         {
           "id": "reactHookForm",
@@ -185,6 +181,39 @@
       "description": "Discord bot made in NodeJS to save and track the tilts of your friends in the server"
     },
     {
+      "id": "https://github.com/andreseichi/pixelart-shop",
+      "name": "PixelArt Shop",
+      "image": "https://raw.githubusercontent.com/andreseichi/pixelart-shop/main/screenshots/screenshot2.png",
+      "url": "https://pixelart-shop.vercel.app/",
+      "technologies": [
+        {
+          "id": "typescript",
+          "name": "Typescript"
+        },
+        {
+          "id": "react",
+          "name": "ReactJS"
+        },
+        {
+          "id": "nextjs",
+          "name": "NextJS"
+        },
+        {
+          "id": "tailwindcss",
+          "name": "TailwindCSS"
+        },
+        {
+          "id": "radix",
+          "name": "Radix UI"
+        },
+        {
+          "id": "stripe",
+          "name": "Stripe"
+        }
+      ],
+      "description": "My eshop of pixel art. If you want to support me you can buy some of my pixel art there"
+    },
+    {
       "id": "https://github.com/andreseichi/tashiro.dev",
       "name": "Tashiro Dev - Website",
       "image": "https://raw.githubusercontent.com/andreseichi/tashiro.dev/main/screenshots/screenshot.png",
@@ -200,8 +229,7 @@
         },
         {
           "id": "nextjs",
-          "name": "NextJS",
-          "backgroundColor": "bg-zinc-400"
+          "name": "NextJS"
         },
         {
           "id": "reactHookForm",
