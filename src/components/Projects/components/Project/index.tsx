@@ -43,7 +43,9 @@ export function Project({ project }: Project) {
           {project.technologies.map((technology, index) => (
             <div
               key={index}
-              className={`h-[40px] w-[40px] rounded-full p-1 ${technology?.backgroundColor}`}
+              className={`h-[40px] w-[40px] rounded-full p-1 ${
+                technology?.backgroundColor ?? "bg-gray-800"
+              }`}
             >
               <TechnologyIcon
                 id={technology.id}
